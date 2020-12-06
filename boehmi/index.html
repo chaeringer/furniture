@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+
+    <script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"></script>
+    <script src="https://unpkg.com/aframe-supercraft-loader@1.1.3/dist/aframe-supercraft-loader.js"></script>
+
+
+    <title>Böhmi</title>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="plywood" src="../assets/plywood.jpg">
+            <img id="boehmi" src="../assets/boehmi.JPG">
+
+            <img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/http://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous">
+        </a-assets>
+
+        <a-sky src="#sky" rotation="0 -90 0" material="" geometry=""></a-sky>
+
+        <a-image src="#boehmi" width="4" height="3" material="" geometry="" position="6.38669 10.92731 0" rotation="0 90 0" scale="12 12 12"></a-image>
+
+        <a-entity id="bh1" position="">
+            <a-box src="#plywood" position="0 1.6 2.55757" rotation="0 0 90" color="#4CC3D9" material="color: #aea27e" geometry="" scale="3.2 3 0.2"></a-box>
+            <a-box src="#plywood" position="0 1.6 -1.936" rotation="0 0 90" color="#4CC3D9" material="color: #aea27e" geometry="" scale="3.2 3 0.2"></a-box>
+
+            <a-box src="#plywood" position="0 3.1 0.308" rotation="90 90 0" color="#4CC3D9" material="color: #aea27e" geometry="" scale="4.3 3 0.2"></a-box>
+            <a-box src="#plywood" position="0.4 1.5 0.308" rotation="0 90 0" color="#4CC3D9" material="color: #aea27e" geometry="" scale="4.3 3 0.2"></a-box>
+        </a-entity>
+
+
+        <a-entity id="bench" position="8.46957 -0.00423 -9.82106">
+            <a-box src="#plywood" position="0 1.6 6.86124" rotation="0 0 90" color="#4CC3D9" material="color: #aea27e" geometry="" scale="3.2 3 0.2"></a-box>
+            <a-box src="#plywood" position="0 1.6 -6.23637" rotation="0 0 90" color="#4CC3D9" material="color: #aea27e" geometry="" scale="3.2 3 0.2"></a-box>
+
+            <a-box src="#plywood" position="0 3.1 0.308" rotation="90 90 0" color="#4CC3D9" material="color: #aea27e" geometry="" scale="12.9 3 0.2"></a-box>
+            <a-box src="#plywood" position="0.4 1.5 0.308" rotation="0 90 0" color="#4CC3D9" material="color: #aea27e" geometry="" scale="12.9 3 0.2"></a-box>
+        </a-entity>
+
+
+        <a-entity camera="" look-controls="" orbit-controls="target: 0 1.6 -0.5; minDistance: 0.5; maxDistance: 180; initialPosition: 0 5 15" position="" rotation="0.11459155902616465 -36.554707329346535 0" data-aframe-inspector-original-camera=""></a-entity>
+
+    </a-scene>
+</body>
+
+</html>
