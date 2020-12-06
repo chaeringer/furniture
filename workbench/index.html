@@ -16,6 +16,9 @@
             <img id="fichte" src="../assets/fichte.jpg">
             <img id="plywood" src="../assets/plywood.jpg">
             <img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/http://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous">
+
+            <a-asset-item id="ooni" src="../assets/OoniProPizzaOven/model.glb"></a-asset-item>
+
         </a-assets>
 
         <a-sky src="#sky" rotation="0 -90 0" material="" geometry=""></a-sky>
@@ -60,6 +63,8 @@
 
         <a-entity id="workbench4x4" position="15 0 0">
             <a-entity id="textlabel" position="-0.59254 1 15" text="value: WORKBENCH 80cm x 160cm (4,4cm x 4,4cm)" scale="10 10 10"></a-entity>
+
+            <a-entity gltf-model="#ooni" id="OONI"></a-entity>
 
             <a-entity id="tableTopContainer" position="0 4.380 0">
                 <a-box id="tabletop" src="#plywood" position="0 4.71521 0.308" material="color: #aea27e" geometry="" scale="8 0.2 16"></a-box>
